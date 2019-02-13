@@ -9,15 +9,19 @@
       </ul>
     </div>
     <div class="right">
-
+      <Stats />
     </div>
   </div>
 </template>
 
 <script>
+import Stats from './Stats.vue'
 import { mapState } from 'vuex'
 export default {
   name: 'HelloWorld',
+  components: {
+    Stats
+  },
   computed: {
     ...mapState([
     'title',

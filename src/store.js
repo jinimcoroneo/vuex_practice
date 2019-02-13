@@ -12,6 +12,14 @@ export default new Vuex.Store({
       'http://coolstuff.com'
     ]
   },
+
+  // Define the name of the getter first, then pass in access to the state
+  getters: {
+    countLinks: state => {
+      return state.links.length
+    }
+  },
+
   mutations: {
 
   },
