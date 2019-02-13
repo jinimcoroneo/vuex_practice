@@ -5,7 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    title: "My Custom Title"
+    title: "My Custom Title",
+    links: [
+      'http://google.com',
+      'http://facebook.com',
+      'http://coolstuff.com'
+    ]
   },
   mutations: {
 
